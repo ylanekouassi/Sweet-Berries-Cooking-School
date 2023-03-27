@@ -1,0 +1,508 @@
+body {
+background-color: #E5E5E5;   
+}
+
+
+* {
+margin: 0;
+padding: 0;
+box-sizing: border-box;    
+}
+
+
+.grid-container {
+display: grid; 
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: 100px 600px 888px 80px;
+grid-template-areas:
+"header header header"
+"section section section"
+"card-container card-container card-container"
+"footer footer footer";
+}
+
+
+
+.header {
+padding: 0 20px;  
+grid-area: header;
+display: flex;
+justify-content: space-between;
+
+}
+    
+.section {
+padding: 0 20px;  
+grid-area: section;
+display: flex;
+column-gap: 20px;
+}
+    
+.card-container {
+padding: 0 20px;  
+grid-area: card-container; 
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+grid-template-rows: repeat(2, 324px);
+row-gap: 50px;
+column-gap: 40px;
+}
+    
+.footer {
+background-color: #FEBD2F;                                                                                                                                                     ;    
+grid-area: footer;
+display: flex;
+justify-content: center;
+align-items: center; 
+}
+
+
+.footer img {
+width: 129.62px;
+height: 32px;    
+}
+
+
+/* HEADER EDITING */
+
+nav {
+display: flex;
+column-gap: 20px;
+
+}
+    
+nav a {
+text-decoration: none;
+font-family: 'Roboto';
+font-style: normal;
+font-weight: bold;
+font-size: 16px;
+color: black;
+
+}
+    
+header button{
+border-radius: 28px;
+background-color: black;
+color: white;
+width: 130px;
+height: 48px;
+}
+    
+header img {
+width: 162.03px;
+height: 40px;
+}
+    
+    
+    
+    
+/* SECTION */
+    
+    
+
+    
+    
+section h1 {
+font-family: 'Roboto Serif';
+font-style: normal;
+font-weight: bold;
+font-size: 64px;
+}
+    
+section p {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+color: #646464;
+}
+    
+    
+    /* MAIN EDITING */
+
+main h2 {
+font-family: 'Roboto Serif';
+font-style: normal;
+font-weight: bold;
+font-size: 40px;
+}
+        
+main h3 {
+font-family: 'Roboto Serif';
+font-style: normal;
+font-weight: bold;
+font-size: 24px;
+line-height: 28px;
+}
+        
+main p {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: bold;
+font-size: 18px;
+line-height: 28px;
+color: #646464;
+}
+
+main button {
+border-radius: 40px;
+font-weight: bold;
+font-family: 'Roboto';
+font-style: normal;
+font-size: 18px;
+width: 143px;
+height: 48px;
+}
+
+main div {
+border-radius: 40px;
+background-color: #FFFFFF;
+padding: 40px;
+}
+
+.yellow {
+background-color: #FEBD2F;
+}
+
+/* POSITIONNING */
+
+
+
+.knife {
+position: absolute;
+top: 665px;
+left: 735px;
+}
+
+.leaf-1 {
+position: absolute;
+top: 1035px;
+left: 725px;
+}
+
+.leaf-2 {
+position: absolute;
+top: 1050px;
+left: 725px;    
+}
+
+.book-1 {
+position: absolute;
+top: 1050px;
+left: 300px;  
+}
+    
+.book-2 {
+position: absolute;
+top: 1045px;
+left: 312px;  
+}
+    
+.book-3 {
+position: absolute;
+top: 1070px;
+left: 315px;  
+}
+
+.book-4 {
+position: absolute;
+top: 1080px;
+left: 315px;      
+}
+
+
+.pot-1 {
+position:absolute;
+top: 675px;
+right: 50px;
+}
+
+.pot-2 {
+position: absolute;
+top: 675px;
+right: 40px;
+}
+
+.pot-3 {
+position: absolute;
+top: 675px;
+right: 105px;
+}
+
+.pot-4 {
+position: absolute;
+top: 660px;
+right: 80px;    
+}
+
+.pot-4-1 {
+position: absolute;
+top: 660px;
+right: 70px;   
+}
+
+.pot-4-2 {
+position: absolute; 
+top: 660px; 
+right: 90px;  
+}
+
+.burger-1 {
+position: absolute;
+right: 50px;
+top: 1035px;
+}
+
+.burger-2 {
+position: absolute;
+right: 45px;
+top: 1065px;
+}
+
+.burger-3 {
+position: absolute;
+right: 45px;
+top: 1075px;
+}
+
+.burger-4 {
+position: absolute;
+right: 52px;
+top: 1080px;
+}
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 768px) {
+
+
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;    
+}    
+
+
+.grid-container {
+display: grid; 
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: 100px 752px 1030px 80px;
+grid-template-areas: 
+"header header"
+"section section"
+"card-container card-container"
+"footer footer";
+}
+
+
+.header {
+grid-area: header;
+display: flex;
+justify-content: space-between;
+}
+
+.section {
+grid-area: section;
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;    
+}
+
+.card-container {
+grid-area: card-container; 
+display: grid;
+grid-template-columns: repeat(2, 1fr);
+grid-template-rows: repeat(3, 263px);
+row-gap: 50px;
+column-gap: 40px;
+padding-top: 80px;
+}
+
+.footer {
+background-color: #FEBD2F;                                                                                                                                                     ;    
+grid-area: footer;
+display: flex;
+justify-content: center;
+align-items: center; 
+}
+
+main p {
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;    
+}
+
+main h3 {
+font-family: 'Roboto Serif';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 23px;   
+}
+
+main h2 {
+font-family: 'Roboto Serif';
+font-style: normal;
+font-weight: 500;
+font-size: 32px;
+line-height: 37px;    
+}
+
+main button {
+width: 130px;
+height: 40px;
+border-radius: 50px;
+}
+
+.knife {
+position: absolute;    
+top: 900px;
+left: 500px;    
+}
+
+.book-1 {
+position: absolute;
+top: 1210px;
+left: 500px;
+}
+
+.book-2 {
+position: absolute;
+top: 1205px;
+left: 512px;    
+}
+
+.book-3 {
+position: absolute;
+top: 1230px;
+left: 515px;    
+}
+
+.book-4 {
+position: absolute;
+top: 1240px; 
+left: 515px;   
+}
+
+.burger-1 {
+position: absolute;
+top: 1520px;
+}
+
+.burger-2 {
+position: absolute;
+top: 1550px;    
+}
+
+.burger-3 {
+position: absolute;
+top: 1560px;    
+}
+
+.burger-4 {
+position: absolute;
+top: 1565px;
+}
+
+.leaf-1 {
+position: absolute;
+left: 190px;
+top: 1520px;
+}
+
+.leaf-2 {
+position: absolute;
+left: 190px;
+top: 1535px;    
+}
+
+.pot-1 {
+position: absolute;
+top: 1225px;
+left: 190px;
+}
+
+.pot-2 {
+position: absolute;
+top: 1225px;
+left: 247px;
+}
+
+.pot-3 {
+position: absolute;
+top: 1225px;
+left: 180px;
+}
+
+.pot-4 {
+position: absolute;
+top: 1205px;
+left: 218px;
+}
+
+.pot-4-1 {
+position: absolute;
+top: 1205px;
+left: 210px;
+}
+
+.pot-4-2 {
+position: absolute;
+top: 1205px;
+left: 226px;
+}
+
+}
+
+
+@media screen and (max-width: 390px) {
+
+*{
+padding: 0;
+margin: 0;
+box-sizing: border-box;    
+}      
+
+.grid-container {
+display: grid;
+grid-template: 80px 500px 1900px 60px / 1fr;
+grid-template-areas: 
+"header"
+"section"
+"card-container"
+"footer";
+}
+
+.header {
+grid-area: header;
+display:flex;
+}
+
+.section {
+grid-area: section;
+display: flex;
+flex-direction: column;
+text-align: center;    
+}
+
+.card-container {
+grid-area: card-container; 
+display: grid;
+grid-template-columns: 1fr;
+grid-template-rows: 132px 247px 247px 247px 247px 247px;
+row-gap: 50px;
+padding-top: 60px;
+}
+
+
+
+    
+
+
+    
+}
