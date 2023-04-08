@@ -9,7 +9,7 @@ padding: 0;
 box-sizing: border-box;    
 }
 
-
+/* Superb! You’ve used grid template areas correctly! */
 .grid-container {
 display: grid; 
 grid-template-columns: repeat(3, 1fr);
@@ -21,7 +21,7 @@ grid-template-areas:
 "footer footer footer";
 }
 
-
+/* Beautiful work on using CSS Grid and flex box together! */
 
 .header {
 padding: 0 20px;  
@@ -55,7 +55,7 @@ display: flex;
 justify-content: center;
 align-items: center; 
 }
-
+/* The images aren’t responsive. You can give a % value to an image’s width to make it responsive to the screen size. */
 
 .footer img {
 width: 129.62px;
@@ -64,12 +64,14 @@ height: 32px;
 
 
 /* HEADER EDITING */
+/* Nice work on using Flexbox properly to create some of the components. */
 
 nav {
 display: flex;
 column-gap: 20px;
 
 }
+/* Great work on being detailed oriented and adding the right fonts to each component of the website. */
     
 nav a {
 text-decoration: none;
@@ -167,8 +169,13 @@ background-color: #FEBD2F;
 
 /* POSITIONNING */
 
+/* Even-though it looks like you achieved placing the logo above the card, it is not the proper way.
+You should give the icon a position of absolute, this will bring the icon out of the document flow.
+Then you need to give the card a position of relative in order for the icon to be placed in relative to the card. */
 
-
+/* There's a lot of duplicated code.
+You are giving the same styling to each icon.
+You can do this by giving the same class to all icons and having one styling in the CSS. */
 .knife {
 position: absolute;
 top: 665px;
@@ -274,7 +281,7 @@ top: 1080px;
 
 
 /* MEDIA QUERIES */
-
+/* Great work on making your project responsive using media queries properly! */
 @media screen and (max-width: 768px) {
 
 
@@ -459,7 +466,7 @@ left: 226px;
 
 }
 
-
+/* You haven’t implemented a functional hamburger menu. */
 @media screen and (max-width: 390px) {
 
 *{
